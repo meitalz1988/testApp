@@ -44,7 +44,11 @@
     -->
 
     <!-- Plugins -->
-
+    
+    <feature name="Device">
+    <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    
     <!-- Core plugins -->
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
