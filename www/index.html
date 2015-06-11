@@ -31,7 +31,7 @@
     </head>
    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
-
+    alert("step 1");
     // Wait for device API libraries to load
     //
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -39,9 +39,11 @@
     // device APIs are available
     //
     function onDeviceReady() {
+        alert("step 2");
         var myContact = navigator.contacts.create({"displayName": "Test User"});
         myContact.note = "This contact has a note.";
-        console.log("The contact, " + myContact.displayName + ", note: " + myContact.note);
+        alert("step 3");
+        
     }
 
     </script>
